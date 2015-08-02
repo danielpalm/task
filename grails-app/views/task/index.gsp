@@ -90,7 +90,7 @@ $(document).ready(function() {
 
 <tr>
 	
-	<td {{if completed == true}} class="taskCompleted" {{/if}}>{{= task}} {{= completed}}</td>
+	<td {{if completed == true}} class="taskCompleted" {{/if}}>{{= task}}</td>
 	<td {{if completed == true}} class="taskCompleted" {{/if}}><time datetime="{{= requiredBy}}">{{= requiredBy }}</time></td>
 	<td {{if completed == true}} class="taskCompleted" {{/if}}>{{= $("#category option[value=" + category + "]").text()}}</td>
 	<td>
