@@ -1,0 +1,706 @@
+2015-08-01 16:22:32,165 [http-bio-8080-exec-3] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 27: unable to resolve class Task 
+ @ line 27, column 14.
+       def show(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 32: unable to resolve class Task 
+ @ line 32, column 17.
+           respond new Task(params)
+                   ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 36: unable to resolve class Task 
+ @ line 36, column 14.
+       def save(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 54: unable to resolve class Task 
+ @ line 54, column 14.
+       def edit(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 61: unable to resolve class Task 
+ @ line 61, column 14.
+           Task taskInstance = Task.findById(request.JSON.id)
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 90: unable to resolve class Task 
+ @ line 90, column 14.
+           Task taskInstance = Task.findById(request.JSON.id)
+                ^
+
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:938)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:585)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:534)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:517)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1161)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1212)
+	at org.codehaus.groovy.grails.compiler.Grailsc.compile(Grailsc.java:78)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:827)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at groovy.util.AntBuilder.performTask(AntBuilder.java:319)
+	at groovy.util.AntBuilder.nodeCompleted(AntBuilder.java:264)
+	at groovy.util.BuilderSupport.doInvokeMethod(BuilderSupport.java:147)
+	at groovy.util.AntBuilder.doInvokeMethod(AntBuilder.java:203)
+	at groovy.util.BuilderSupport.invokeMethod(BuilderSupport.java:64)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:120)
+	at org.codehaus.groovy.grails.project.compiler.GrailsProjectCompiler.compile(GrailsProjectCompiler.groovy:298)
+	at org.codehaus.groovy.grails.project.compiler.GrailsProjectCompiler$compile$3.callCurrent(Unknown Source)
+	at org.codehaus.groovy.grails.project.compiler.GrailsProjectCompiler.compile(GrailsProjectCompiler.groovy:265)
+	at org.codehaus.groovy.grails.project.compiler.GrailsProjectCompiler.compileAll(GrailsProjectCompiler.groovy:256)
+	at org.codehaus.groovy.grails.project.compiler.GrailsProjectWatcher.compileIfSource(GrailsProjectWatcher.java:262)
+	at org.codehaus.groovy.grails.project.compiler.GrailsProjectWatcher.access$300(GrailsProjectWatcher.java:48)
+	at org.codehaus.groovy.grails.project.compiler.GrailsProjectWatcher$1.onChange(GrailsProjectWatcher.java:136)
+	at org.codehaus.groovy.grails.compiler.AbstractDirectoryWatcher.fireOnChange(AbstractDirectoryWatcher.java:70)
+	at org.codehaus.groovy.grails.compiler.WatchServiceDirectoryWatcher.run(WatchServiceDirectoryWatcher.java:106)
+	at org.codehaus.groovy.grails.compiler.DirectoryWatcher.run(DirectoryWatcher.java:154)
+	at org.codehaus.groovy.grails.project.compiler.GrailsProjectWatcher.run(GrailsProjectWatcher.java:161)
+	at java_lang_Runnable$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at org.codehaus.groovy.grails.cli.fork.ForkedGrailsProcess.startProjectWatcher(ForkedGrailsProcess.groovy:748)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1206)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1015)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1151)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1120)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1015)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:145)
+	at org.codehaus.groovy.grails.cli.fork.ForkedGrailsProcess$_setupReloading_closure17.doCall(ForkedGrailsProcess.groovy:737)
+	at org.codehaus.groovy.grails.cli.fork.ForkedGrailsProcess$_setupReloading_closure17.doCall(ForkedGrailsProcess.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1206)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1120)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1015)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at groovy.lang.Closure.call(Closure.java:417)
+	at groovy.lang.Closure.run(Closure.java:504)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 16:22:32,172 [http-bio-8080-exec-3] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 27: unable to resolve class Task 
+ @ line 27, column 14.
+       def show(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 32: unable to resolve class Task 
+ @ line 32, column 17.
+           respond new Task(params)
+                   ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 36: unable to resolve class Task 
+ @ line 36, column 14.
+       def save(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 54: unable to resolve class Task 
+ @ line 54, column 14.
+       def edit(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 61: unable to resolve class Task 
+ @ line 61, column 14.
+           Task taskInstance = Task.findById(request.JSON.id)
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 90: unable to resolve class Task 
+ @ line 90, column 14.
+           Task taskInstance = Task.findById(request.JSON.id)
+                ^
+
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:938)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:585)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:534)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:517)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1161)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1212)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:827)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 16:22:32,284 [http-bio-8080-exec-3] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 27: unable to resolve class Task 
+ @ line 27, column 14.
+       def show(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 32: unable to resolve class Task 
+ @ line 32, column 17.
+           respond new Task(params)
+                   ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 36: unable to resolve class Task 
+ @ line 36, column 14.
+       def save(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 54: unable to resolve class Task 
+ @ line 54, column 14.
+       def edit(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 61: unable to resolve class Task 
+ @ line 61, column 14.
+           Task taskInstance = Task.findById(request.JSON.id)
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 90: unable to resolve class Task 
+ @ line 90, column 14.
+           Task taskInstance = Task.findById(request.JSON.id)
+                ^
+
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:938)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:585)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:534)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:517)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1161)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1212)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:827)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 16:22:32,285 [http-bio-8080-exec-3] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 27: unable to resolve class Task 
+ @ line 27, column 14.
+       def show(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 32: unable to resolve class Task 
+ @ line 32, column 17.
+           respond new Task(params)
+                   ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 36: unable to resolve class Task 
+ @ line 36, column 14.
+       def save(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 54: unable to resolve class Task 
+ @ line 54, column 14.
+       def edit(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 61: unable to resolve class Task 
+ @ line 61, column 14.
+           Task taskInstance = Task.findById(request.JSON.id)
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 90: unable to resolve class Task 
+ @ line 90, column 14.
+           Task taskInstance = Task.findById(request.JSON.id)
+                ^
+
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:938)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:585)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:534)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:517)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1161)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1212)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:827)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 16:22:49,910 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 27: unable to resolve class Task 
+ @ line 27, column 14.
+       def show(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 32: unable to resolve class Task 
+ @ line 32, column 17.
+           respond new Task(params)
+                   ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 36: unable to resolve class Task 
+ @ line 36, column 14.
+       def save(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 54: unable to resolve class Task 
+ @ line 54, column 14.
+       def edit(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 61: unable to resolve class Task 
+ @ line 61, column 14.
+           Task taskInstance = Task.findById(request.JSON.id)
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 90: unable to resolve class Task 
+ @ line 90, column 14.
+           Task taskInstance = Task.findById(request.JSON.id)
+                ^
+
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:938)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:585)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:534)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:517)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1161)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1212)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:827)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 16:22:49,912 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 27: unable to resolve class Task 
+ @ line 27, column 14.
+       def show(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 32: unable to resolve class Task 
+ @ line 32, column 17.
+           respond new Task(params)
+                   ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 36: unable to resolve class Task 
+ @ line 36, column 14.
+       def save(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 54: unable to resolve class Task 
+ @ line 54, column 14.
+       def edit(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 61: unable to resolve class Task 
+ @ line 61, column 14.
+           Task taskInstance = Task.findById(request.JSON.id)
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 90: unable to resolve class Task 
+ @ line 90, column 14.
+           Task taskInstance = Task.findById(request.JSON.id)
+                ^
+
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:938)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:585)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:534)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:517)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1161)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1212)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:827)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 16:22:49,992 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 27: unable to resolve class Task 
+ @ line 27, column 14.
+       def show(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 32: unable to resolve class Task 
+ @ line 32, column 17.
+           respond new Task(params)
+                   ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 36: unable to resolve class Task 
+ @ line 36, column 14.
+       def save(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 54: unable to resolve class Task 
+ @ line 54, column 14.
+       def edit(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 61: unable to resolve class Task 
+ @ line 61, column 14.
+           Task taskInstance = Task.findById(request.JSON.id)
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 90: unable to resolve class Task 
+ @ line 90, column 14.
+           Task taskInstance = Task.findById(request.JSON.id)
+                ^
+
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:938)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:585)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:534)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:517)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1161)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1212)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:827)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 16:22:49,993 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 27: unable to resolve class Task 
+ @ line 27, column 14.
+       def show(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 32: unable to resolve class Task 
+ @ line 32, column 17.
+           respond new Task(params)
+                   ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 36: unable to resolve class Task 
+ @ line 36, column 14.
+       def save(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 54: unable to resolve class Task 
+ @ line 54, column 14.
+       def edit(Task taskInstance) {
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 61: unable to resolve class Task 
+ @ line 61, column 14.
+           Task taskInstance = Task.findById(request.JSON.id)
+                ^
+
+C:\Users\Daniel\Desktop\tarefafinal\task\grails-app\controllers\task\TaskController.groovy: 90: unable to resolve class Task 
+ @ line 90, column 14.
+           Task taskInstance = Task.findById(request.JSON.id)
+                ^
+
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:938)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:585)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:534)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:517)
+	at org.codehaus.groovy.tools.FileSystemCompiler.compile(FileSystemCompiler.java:59)
+	at org.codehaus.groovy.tools.FileSystemCompiler.doCompilation(FileSystemCompiler.java:215)
+	at org.codehaus.groovy.ant.Groovyc.runCompiler(Groovyc.java:1161)
+	at org.codehaus.groovy.ant.Groovyc.compile(Groovyc.java:1212)
+	at org.codehaus.groovy.ant.Groovyc.execute(Groovyc.java:827)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 16:51:00,047 [FileSystemWatcher: files=#120 cl=groovy.lang.GroovyClassLoader@7ab2f38f] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "task/TaskController$_save_closure6$$DPK8nw6H"
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at org.springsource.loaded.ChildClassLoader.defineClass(ChildClassLoader.java:37)
+	at org.springsource.loaded.TypeRegistry.defineClass(TypeRegistry.java:1116)
+	at org.springsource.loaded.CurrentLiveVersion.define(CurrentLiveVersion.java:111)
+	at org.springsource.loaded.CurrentLiveVersion.<init>(CurrentLiveVersion.java:99)
+	at org.springsource.loaded.ReloadableType.loadNewVersion(ReloadableType.java:396)
+	at org.springsource.loaded.TypeRegistry.loadNewVersion(TypeRegistry.java:845)
+	at org.springsource.loaded.agent.ReloadableFileChangeListener.fileChanged(ReloadableFileChangeListener.java:51)
+	at org.springsource.loaded.agent.Watcher.determineChangesSince(FileSystemWatcher.java:235)
+	at org.springsource.loaded.agent.Watcher.run(FileSystemWatcher.java:219)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 16:51:00,138 [FileSystemWatcher: files=#120 cl=groovy.lang.GroovyClassLoader@7ab2f38f] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "task/TaskController$_save_closure6$$DPK8nw6H"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 16:51:00,138 [FileSystemWatcher: files=#120 cl=groovy.lang.GroovyClassLoader@7ab2f38f] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "task/TaskController$_save_closure6$$DPK8nw6H"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 16:51:00,138 [FileSystemWatcher: files=#120 cl=groovy.lang.GroovyClassLoader@7ab2f38f] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "task/TaskController$_save_closure6$$DPK8nw6H"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 16:51:00,204 [FileSystemWatcher: files=#120 cl=groovy.lang.GroovyClassLoader@7ab2f38f] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "task/TaskController$_update_closure8$$DPK8nw6M"
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at org.springsource.loaded.ChildClassLoader.defineClass(ChildClassLoader.java:37)
+	at org.springsource.loaded.TypeRegistry.defineClass(TypeRegistry.java:1116)
+	at org.springsource.loaded.CurrentLiveVersion.define(CurrentLiveVersion.java:111)
+	at org.springsource.loaded.CurrentLiveVersion.<init>(CurrentLiveVersion.java:99)
+	at org.springsource.loaded.ReloadableType.loadNewVersion(ReloadableType.java:396)
+	at org.springsource.loaded.TypeRegistry.loadNewVersion(TypeRegistry.java:845)
+	at org.springsource.loaded.agent.ReloadableFileChangeListener.fileChanged(ReloadableFileChangeListener.java:51)
+	at org.springsource.loaded.agent.Watcher.determineChangesSince(FileSystemWatcher.java:235)
+	at org.springsource.loaded.agent.Watcher.run(FileSystemWatcher.java:219)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 16:51:00,204 [FileSystemWatcher: files=#120 cl=groovy.lang.GroovyClassLoader@7ab2f38f] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "task/TaskController$_update_closure8$$DPK8nw6M"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 16:51:00,204 [FileSystemWatcher: files=#120 cl=groovy.lang.GroovyClassLoader@7ab2f38f] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "task/TaskController$_update_closure8$$DPK8nw6M"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 16:51:00,205 [FileSystemWatcher: files=#120 cl=groovy.lang.GroovyClassLoader@7ab2f38f] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "task/TaskController$_update_closure8$$DPK8nw6M"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 16:51:00,222 [FileSystemWatcher: files=#120 cl=groovy.lang.GroovyClassLoader@7ab2f38f] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "task/TaskController$$DPK8nw50"
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at org.springsource.loaded.ChildClassLoader.defineClass(ChildClassLoader.java:37)
+	at org.springsource.loaded.TypeRegistry.defineClass(TypeRegistry.java:1116)
+	at org.springsource.loaded.CurrentLiveVersion.define(CurrentLiveVersion.java:111)
+	at org.springsource.loaded.CurrentLiveVersion.<init>(CurrentLiveVersion.java:99)
+	at org.springsource.loaded.ReloadableType.loadNewVersion(ReloadableType.java:396)
+	at org.springsource.loaded.TypeRegistry.loadNewVersion(TypeRegistry.java:845)
+	at org.springsource.loaded.agent.ReloadableFileChangeListener.fileChanged(ReloadableFileChangeListener.java:51)
+	at org.springsource.loaded.agent.Watcher.determineChangesSince(FileSystemWatcher.java:235)
+	at org.springsource.loaded.agent.Watcher.run(FileSystemWatcher.java:219)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 16:51:00,222 [FileSystemWatcher: files=#120 cl=groovy.lang.GroovyClassLoader@7ab2f38f] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "task/TaskController$$DPK8nw50"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 16:51:00,223 [FileSystemWatcher: files=#120 cl=groovy.lang.GroovyClassLoader@7ab2f38f] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "task/TaskController$$DPK8nw50"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 16:51:00,223 [FileSystemWatcher: files=#120 cl=groovy.lang.GroovyClassLoader@7ab2f38f] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "task/TaskController$$DPK8nw50"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,424 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$_run_closure3$$DPK8riyK"
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at org.springsource.loaded.ChildClassLoader.defineClass(ChildClassLoader.java:37)
+	at org.springsource.loaded.TypeRegistry.defineClass(TypeRegistry.java:1116)
+	at org.springsource.loaded.CurrentLiveVersion.define(CurrentLiveVersion.java:111)
+	at org.springsource.loaded.CurrentLiveVersion.<init>(CurrentLiveVersion.java:99)
+	at org.springsource.loaded.ReloadableType.loadNewVersion(ReloadableType.java:396)
+	at org.springsource.loaded.TypeRegistry.loadNewVersion(TypeRegistry.java:845)
+	at org.springsource.loaded.agent.ReloadableFileChangeListener.fileChanged(ReloadableFileChangeListener.java:51)
+	at org.springsource.loaded.agent.Watcher.determineChangesSince(FileSystemWatcher.java:235)
+	at org.springsource.loaded.agent.Watcher.run(FileSystemWatcher.java:219)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,425 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$_run_closure3$$DPK8riyK"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,426 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$_run_closure3$$DPK8riyK"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,426 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$_run_closure3$$DPK8riyK"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,481 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$_run_closure3_closure4$$DPK8riyN"
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at org.springsource.loaded.ChildClassLoader.defineClass(ChildClassLoader.java:37)
+	at org.springsource.loaded.TypeRegistry.defineClass(TypeRegistry.java:1116)
+	at org.springsource.loaded.CurrentLiveVersion.define(CurrentLiveVersion.java:111)
+	at org.springsource.loaded.CurrentLiveVersion.<init>(CurrentLiveVersion.java:99)
+	at org.springsource.loaded.ReloadableType.loadNewVersion(ReloadableType.java:396)
+	at org.springsource.loaded.TypeRegistry.loadNewVersion(TypeRegistry.java:845)
+	at org.springsource.loaded.agent.ReloadableFileChangeListener.fileChanged(ReloadableFileChangeListener.java:51)
+	at org.springsource.loaded.agent.Watcher.determineChangesSince(FileSystemWatcher.java:235)
+	at org.springsource.loaded.agent.Watcher.run(FileSystemWatcher.java:219)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,481 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$_run_closure3_closure4$$DPK8riyN"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,481 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$_run_closure3_closure4$$DPK8riyN"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,482 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$_run_closure3_closure4$$DPK8riyN"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,487 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$_run_closure3_closure4_closure7$$DPK8riyQ"
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at org.springsource.loaded.ChildClassLoader.defineClass(ChildClassLoader.java:37)
+	at org.springsource.loaded.TypeRegistry.defineClass(TypeRegistry.java:1116)
+	at org.springsource.loaded.CurrentLiveVersion.define(CurrentLiveVersion.java:111)
+	at org.springsource.loaded.CurrentLiveVersion.<init>(CurrentLiveVersion.java:99)
+	at org.springsource.loaded.ReloadableType.loadNewVersion(ReloadableType.java:396)
+	at org.springsource.loaded.TypeRegistry.loadNewVersion(TypeRegistry.java:845)
+	at org.springsource.loaded.agent.ReloadableFileChangeListener.fileChanged(ReloadableFileChangeListener.java:51)
+	at org.springsource.loaded.agent.Watcher.determineChangesSince(FileSystemWatcher.java:235)
+	at org.springsource.loaded.agent.Watcher.run(FileSystemWatcher.java:219)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,487 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$_run_closure3_closure4_closure7$$DPK8riyQ"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,487 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$_run_closure3_closure4_closure7$$DPK8riyQ"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,487 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$_run_closure3_closure4_closure7$$DPK8riyQ"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,492 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$_run_closure3_closure5$$DPK8riyS"
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at org.springsource.loaded.ChildClassLoader.defineClass(ChildClassLoader.java:37)
+	at org.springsource.loaded.TypeRegistry.defineClass(TypeRegistry.java:1116)
+	at org.springsource.loaded.CurrentLiveVersion.define(CurrentLiveVersion.java:111)
+	at org.springsource.loaded.CurrentLiveVersion.<init>(CurrentLiveVersion.java:99)
+	at org.springsource.loaded.ReloadableType.loadNewVersion(ReloadableType.java:396)
+	at org.springsource.loaded.TypeRegistry.loadNewVersion(TypeRegistry.java:845)
+	at org.springsource.loaded.agent.ReloadableFileChangeListener.fileChanged(ReloadableFileChangeListener.java:51)
+	at org.springsource.loaded.agent.Watcher.determineChangesSince(FileSystemWatcher.java:235)
+	at org.springsource.loaded.agent.Watcher.run(FileSystemWatcher.java:219)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,493 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$_run_closure3_closure5$$DPK8riyS"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,493 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$_run_closure3_closure5$$DPK8riyS"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,493 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$_run_closure3_closure5$$DPK8riyS"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,498 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$_run_closure3_closure6$$DPK8riyZ"
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at org.springsource.loaded.ChildClassLoader.defineClass(ChildClassLoader.java:37)
+	at org.springsource.loaded.TypeRegistry.defineClass(TypeRegistry.java:1116)
+	at org.springsource.loaded.CurrentLiveVersion.define(CurrentLiveVersion.java:111)
+	at org.springsource.loaded.CurrentLiveVersion.<init>(CurrentLiveVersion.java:99)
+	at org.springsource.loaded.ReloadableType.loadNewVersion(ReloadableType.java:396)
+	at org.springsource.loaded.TypeRegistry.loadNewVersion(TypeRegistry.java:845)
+	at org.springsource.loaded.agent.ReloadableFileChangeListener.fileChanged(ReloadableFileChangeListener.java:51)
+	at org.springsource.loaded.agent.Watcher.determineChangesSince(FileSystemWatcher.java:235)
+	at org.springsource.loaded.agent.Watcher.run(FileSystemWatcher.java:219)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,498 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$_run_closure3_closure6$$DPK8riyZ"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,498 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$_run_closure3_closure6$$DPK8riyZ"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,498 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$_run_closure3_closure6$$DPK8riyZ"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,507 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$$DPK8riyC"
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at org.springsource.loaded.ChildClassLoader.defineClass(ChildClassLoader.java:37)
+	at org.springsource.loaded.TypeRegistry.defineClass(TypeRegistry.java:1116)
+	at org.springsource.loaded.CurrentLiveVersion.define(CurrentLiveVersion.java:111)
+	at org.springsource.loaded.CurrentLiveVersion.<init>(CurrentLiveVersion.java:99)
+	at org.springsource.loaded.ReloadableType.loadNewVersion(ReloadableType.java:396)
+	at org.springsource.loaded.TypeRegistry.loadNewVersion(TypeRegistry.java:845)
+	at org.springsource.loaded.agent.ReloadableFileChangeListener.fileChanged(ReloadableFileChangeListener.java:51)
+	at org.springsource.loaded.agent.Watcher.determineChangesSince(FileSystemWatcher.java:235)
+	at org.springsource.loaded.agent.Watcher.run(FileSystemWatcher.java:219)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,507 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$$DPK8riyC"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,507 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$$DPK8riyC"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
+2015-08-01 17:06:03,508 [FileSystemWatcher: files=#107 cl=groovy.lang.GroovyClassLoader@6c9f55d2] ERROR StackTrace  - Full Stack Trace:
+java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassLoader): attempted  duplicate class definition for name: "DataSource$$DPK8riyC"
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:643)
+	at java.lang.Thread.run(Thread.java:745)
